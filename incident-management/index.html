@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pillar 1: Engineering Incident Management &amp; Postmortems | Builder Notes</title>
+<meta name="description" content="The incident management and postmortems pillar. Runbooks, response, blameless reviews, common patterns, tooling. Two articles per week.">
+<link rel="canonical" href="https://yios823.github.io/devtools-blog/incident-management/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pillar 1: Engineering Incident Management &amp; Postmortems">
+<meta property="og:description" content="The incident management and postmortems pillar. Runbooks, response, blameless reviews, common patterns, tooling. Two articles per week.">
+<meta property="og:url" content="https://yios823.github.io/devtools-blog/incident-management/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pillar 1: Engineering Incident Management &amp; Postmortems">
+<meta name="twitter:description" content="The incident management and postmortems pillar. Runbooks, response, blameless reviews, common patterns, tooling. Two articles per week.">
+
+<link rel="stylesheet" href="/static/css/site.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="container">
+    <a class="site-brand" href="/">Builder Notes</a>
+    <ul class="site-nav">
+      <li><a href="/">Articles</a></li>
+      <li><a href="/about/">About</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="container">
+
+<article class="page">
+  <header class="page-header">
+    <h1>Pillar 1: Engineering Incident Management &amp; Postmortems</h1>
+  </header>
+  <div class="article-body">
+    <h2 id="the-pillar-in-one-paragraph">The pillar in one paragraph</h2>
+<p>Incidents are inevitable. Postmortems are the part you control.
+This pillar covers how to write postmortems people actually read,
+how to set up incident response so the on-call rotation doesn&rsquo;t
+collapse, and how the small habits (runbooks, SLOs, blameless
+language) compound into a team that breaks less often over time.</p>
+<p>Most pieces here come out of real incidents. None of the examples
+are fabricated, none of the stats invented, none of the templates
+are theoretical: they were written down right after a thing
+broke and tuned by the next two or three breaks.</p>
+<p>Note: I make some of the tools linked in this article. They&rsquo;re
+optional; the guide stands on its own.</p>
+<h2 id="whats-covered">What&rsquo;s covered</h2>
+<p>The thread runs roughly from the moment something goes wrong, all
+the way through learning from it:</p>
+<h3 id="response">Response</h3>
+<ul>
+<li>Building a runbook the on-call can read at 3am</li>
+<li>SLA, SLO, error budgets explained for small teams</li>
+<li>The first hour of an incident: a checklist</li>
+<li>When to page who: rules that survive promotions</li>
+</ul>
+<h3 id="postmortems">Postmortems</h3>
+<ul>
+<li>The blameless postmortem template I actually use</li>
+<li>Five-whys is not enough: layered causal analysis</li>
+<li>Postmortem meetings that don&rsquo;t waste an hour</li>
+<li>How to write incident summaries an executive will read</li>
+</ul>
+<h3 id="patterns">Patterns</h3>
+<ul>
+<li>The &ldquo;same incident, third time&rdquo; anti-pattern</li>
+<li>Misconfigured config is the most common root cause</li>
+<li>Why the on-call rotation is the canary for org health</li>
+<li>The hidden cost of &ldquo;we&rsquo;ll fix it next sprint&rdquo;</li>
+</ul>
+<h3 id="tooling">Tooling</h3>
+<ul>
+<li>Status page setups that don&rsquo;t lie</li>
+<li>Logging discipline: what to keep, what to drop</li>
+<li>Synthetic monitoring that catches the things that hurt</li>
+<li>Where AI helps in postmortem drafting (and where it makes
+  things worse)</li>
+</ul>
+<h2 id="whats-coming-first">What&rsquo;s coming first</h2>
+<p>The next 8 to 10 articles work through the response side, in order:
+how to set up the rotation, how to write the first runbook, what to
+do in the first hour, who to page when. After that we move into
+the postmortem side and the patterns that emerge once a team has
+written a dozen of them.</p>
+<h2 id="if-you-want-the-packaged-version">If you want the packaged version</h2>
+<p>A lot of the templates and checklists I reach for live in the
+<a href="https://yashios.gumroad.com/l/jphet">Postmortem Field Guide</a>. It
+collects the runbook template, the postmortem template, the
+incident summary template, the meeting structure, and 14 incident
+patterns with concrete examples. It&rsquo;s $29. The articles here cover
+the same ground in long form; the field guide just hands you the
+templates as files.</p>
+<h2 id="rss-following-along">RSS / following along</h2>
+<p>Two new pieces land per week, Tuesday and Saturday at 10am IST,
+sized around 1,800 to 2,500 words. There&rsquo;s no newsletter yet. RSS
+will appear at <code>/rss.xml</code> once the pillar has 5 articles to feed
+through it.</p>
+  </div>
+</article>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p>Builder notes. No tracking. RSS coming.</p>
+  </div>
+</footer>
+</body>
+</html>
